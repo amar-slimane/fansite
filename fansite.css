@@ -2,6 +2,8 @@ body {
     background-image: url('https://images.alphacoders.com/674/674756.jpg');
     background-size : 100%;
     background-repeat: no-repeat;
+    padding:0px;
+    margin:0px;
 }
 header
 {
@@ -95,6 +97,8 @@ header
     flex-direction: row;
     align-content: center;
     align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
 }
 
 img {
@@ -118,5 +122,23 @@ footer
     height:100px;
     top:400px;
     width:100%
+}
+.new2 {
+background-color: white;
+width: 500px;
+height: 400px;
+overflow: scroll;
+overflow-x: hidden;
+box-shadow: 10px 10px 42px -17px rgba(0,0,0,0.75);
+align-content: center;
+align-items: center;
+margin: 20px;
+text-align: center;
+}
+
+.nhm {
+    font-size: 60px;
+    text-align:center;
+    color:brown;
 }
 
