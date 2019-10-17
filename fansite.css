@@ -1,146 +1,77 @@
-.body1 {
-    background: linear-gradient(to right, #36d1dc, #5b86e5);
-}
-.navmain {
-    background: linear-gradient(to right, #22c1c3, #fdbb2d, #22c1c3);
-    border: 3px, solid black;
-    width:500px;
-}
-.mainul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.mainli {
-    display:inline;
-    padding:4px 8px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.mainli:hover,a:hover{
-     background-color: white;
-     color: white;
-}
-.ah1:hover {
-    
-    animation-name: pulse;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-}
-
-.ah1 { 
-    font-family: 'PT Serif', serif;
-    text-align:center;
+body
+{
+	margin:0px;
 }
 
 
-
-.space {
-    background: linear-gradient(to right, #22c1c3, #fdbb2d, #22c1c3);
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    align-content:center;
-    height: 500px;
-
-   
-
-
+/*========================HEADER=======================*/
+header
+{
+	display:flex;
+	flex-direction:row;
+	background-image:url("images/cardboardHeader.png");
+	height:75px;
 }
 
-.spaceimg {
-    max-width:100%;
-    max-height:100%;
+.rotateImg
+{
+	display:flex;
+	flex-direction:row;
+	
+	height:50px;
+	
+	position:relative;
+	bottom:10px;
+	
+	margin:10px;
+	padding-right:20px;
+	
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	
+	border-right:1px solid white;
 }
 
-.home{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
+.rotateImg img
+{
+	height:50px;
 }
 
-.space1 {
-    width:100px;
-    height:150px;
+.rotateImg a
+{
+	position:relative;
+	top:10px;
+	font-size:1.8em;
+	text-decoration:none;
+	color:white;
 }
 
-.spacenew {
-    margin:20px;
-    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
-    flex-basis:15%;
-    text-align:center;
-    box-shadow: 10px 5px 5px royalblue;
-}
-.spacenew:hover {
-    transform: scale(1.7);
-    transition: all .5s;
-}
-.imgdivnew {
-    max-height:100%;
-    max-width: 100%;
-    background-color: rgba(255,255,255, 0.7)
+.rotateImg:hover
+{
+	animation-name:swing;
 }
 
-.homeh1 {
-    font-family: 'PT Serif', serif;
+
+@keyframes swing
+{
+	0% {transform:rotate(-20deg);}
+	50% {transform:rotate(20deg);}
+	100% {transform:rotate(-20deg);}
+	
 }
 
-.homeh1:hover {
-    animation-name: swing;
-    animation-timing-function: linear;
-    animation-duration: 1s;
+
+/*========================MAIN========================*/
+
+main
+{
+	height:60vh;
 }
 
-.foot1 {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background: linear-gradient(to right, #22c1c3, #fdbb2d, #22c1c3);
-    font-family: 'PT Serif', serif;
+
+/*========================FOOTER=======================*/
+footer
+{
+	background-image:url("images/cardboardFooter.png");
+	height:140px;
 }
-
-.footaccueil:hover {
-    transform: scale(1.7);
-    transition: all .5s;
-}
-
-@keyframes pulse {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-  
-    50% {
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-  
-    to {
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-  @keyframes swing {
-    20% {
-      -webkit-transform: rotate3d(0, 0, 1, 15deg);
-      transform: rotate3d(0, 0, 1, 15deg);
-    }
-  
-    40% {
-      -webkit-transform: rotate3d(0, 0, 1, -10deg);
-      transform: rotate3d(0, 0, 1, -10deg);
-    }
-  
-    60% {
-      -webkit-transform: rotate3d(0, 0, 1, 5deg);
-      transform: rotate3d(0, 0, 1, 5deg);
-    }
-  
-    80% {
-      -webkit-transform: rotate3d(0, 0, 1, -5deg);
-      transform: rotate3d(0, 0, 1, -5deg);
-    }
-  
-    to {
-      -webkit-transform: rotate3d(0, 0, 1, 0deg);
-      transform: rotate3d(0, 0, 1, 0deg);
-    }
