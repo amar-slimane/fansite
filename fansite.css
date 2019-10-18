@@ -74,5 +74,40 @@ main
 footer
 {
 	background-image:url("images/cardboardFooter.png");
-	height:140px;
+	height:150px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+footer div
+{
+	display:flex;
+	flex-direction:row;
+	margin-top:15px;
+}
+
+footer div div
+{
+	display:flex;
+	flex-direction:column;
+	height:100px;
+}
+
+.footerImg
+{
+	width:170px;
+	height:130px;
+}
+
+.footerLink
+{
+	font-size:0.6em;
+	margin-top:5px;
+}
+
+#cityHallFooter
+{
+	width:120px;
+	height:130px;
 }
