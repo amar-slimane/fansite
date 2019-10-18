@@ -71,9 +71,56 @@ main
 }
 
 
+/*==========================ACCUEIL========================*/
 
+@font-face 
+{
+	font-family: "chalk";
+	src:url("chalk.ttf");
+}
 
-/*======================VIDEODEMO======================*/
+.garissonMenu
+{
+	
+}
+
+#garisson
+{
+	width:300px;
+	z-index:1;
+	position:relative;
+}
+
+#blackBoard
+{
+	width:800px;
+	z-index:-1;
+	
+	position:relative;
+	right:70px; bottom:150px;
+}
+
+#garissonMenu div
+{
+	position:absolute;
+	bottom:540px; left:290px;
+	width:650px;
+}
+
+#garissonMenu div p, #garissonMenu div h1
+{
+	font-family:"chalk";
+	text-align:justify;
+	color:white;
+	
+}
+
+#garissonMenu div h1
+{
+	text-align:center;
+}
+
+/*======================IMAGES/VIDEO======================*/
 
 
 .doubleHorizontal
