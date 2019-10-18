@@ -12,7 +12,6 @@ header
 	background-image:url("images/cardboardHeader.png");
 	height:75px;
 }
-
 .rotateImg
 {
 	display:flex;
@@ -73,6 +72,11 @@ header
     color:white;
     box-shadow: 10px 10px 42px -17px rgba(0,0,0,0.75);
 }
+.garrisson {
+    position:relative;
+    right:300px;
+}
+
 /* ------------ --------------------------NEWS--------------------------------------------*/
 
 .nh1 {
@@ -107,7 +111,7 @@ img {
 }
 
 .space {
-    height:200px;
+    height:100px;
 }
 
 footer
@@ -142,3 +146,20 @@ text-align: center;
     color:brown;
 }
 
+/* --------------------------------------Event--------------------------*/
+
+.etable {
+    display:flex;
+    flex-direction: column;
+    border-collapse:collapse;
+    align-items: center;
+    align-content:center;
+}
+
+.ethead {
+    background-color:white;
+    border: 3px solid black;
+}
+
+.etbody {
+    border: 3px solid black
