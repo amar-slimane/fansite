@@ -1,7 +1,8 @@
 body
 {
 	background-image:url("https://images.alphacoders.com/674/674756.jpg");
-	background-size:cover;
+	background-size:100%;
+	background-repeat:no-repeat;
 	margin:0px;
 }
 
@@ -66,9 +67,105 @@ header
 
 main
 {
-	height:90vh;
+	
 }
 
+
+
+
+/*======================VIDEODEMO======================*/
+
+
+.doubleHorizontal
+{
+	background-image:url("images/cardboardHorizontal.png");
+	
+	display:flex;
+	flex-direction:row;
+	
+	width:1200px;
+}
+
+.doubleHorizontal video
+{
+	position:relative;
+	top:60px; left:60px;
+	
+	width:500px;
+	height:300px;
+}
+
+.doubleHorizontal blockquote
+{
+	font-size:1.6em;
+	
+	width:500px;
+	height:360px;
+	
+	position:relative;
+	top:15px; left:50px;
+}
+
+.doubleVertical
+{
+	background-image:url("images/cardboardVertical.png");
+	width:630px;
+	height:835px;
+	
+	position:relative;
+	left:20px;
+}
+
+#pcPrincipal img
+{
+	position:relative;
+	right:30px; top:20px;
+}
+
+
+.bottomQuote
+{
+	transform:scaleX(-1);
+	width:100px;
+	
+	position:relative;
+	bottom:50px; left:450px;
+}
+
+.topQuote
+{
+	width:100px;
+	
+	position:relative;
+	top:20px; right:20px;
+}
+
+#coon
+{
+	position:relative;
+	left:650px; bottom:400px;
+	height:420px;
+}
+
+#coon img
+{
+	margin-left:100px;
+	height:380px;
+}
+
+#kenny
+{
+	position:absolute;
+	bottom:-730px; left:1450px;
+}
+
+#stickOfTruth
+{
+	position:absolute;
+	bottom:-830px; left:200px;
+	
+	height:450px;
+}
 
 /*========================FOOTER=======================*/
 footer
