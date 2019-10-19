@@ -3,10 +3,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="fansite.css"/>
-		<title>Fansite - SouthPark - Accueil</title>
+		<title>Fansite - South Park - Contact</title>
 	</head>
 
-	<body id="imageBody">
+	<body>
 		<header>
 			<div class="rotateImg"><img src="images/stan.png"/><a href="fansite.html">Accueil</a></div>
 			<div class="rotateImg"><img src="images/kyle.png"/><a href="fansite2.html">News</a></div>
@@ -16,28 +16,40 @@
 			<div class="rotateImg"><img src="images/butters.png"/><a href="fansite6.html">Contact</a></div>
 		</header>
 
-
-
-
 		<main>
 		
-			<div id="garissonMenu">
-				<img src="images/garrisson.png" id="garisson"/>
-				<img src="images/blackBoard.png" id="blackBoard"/>
-				
-				<div>
-					<h1> Bienvenue a South Park</h1>
-					<p>Vous voilà dans la ville tranquille de South Park, ici vous serez tenu a jour de tout ce qu'il faut savoir sur cette série légendaire.
-						Cette série a débuter en 1994 écrite par <a href="https://fr.wikipedia.org/wiki/Trey_Parker" target="_blank">Trey Parker</a> et <a  href="https://fr.wikipedia.org/wiki/Matt_Stone" target="_blank">Matt Stone</a>
-						La série comptabilise environ 299 épisodes pour 23 saisons. Et sont disponibles gratuitements sur le <a href="https://southpark.cc.com/" target="_blank">Site officiel</a> (Sauf pour la France bizarrement)
-					</p>	
+			<form action="#">
+				<div id="formWrapper">
+					<div>
+						<label for="email">Entrez votre eMail</label>
+						<input name="email" type="email"/>
+					</div>
+					
+					<div>
+						<label for="plainte">Vous avez été vexé par un épisode pour</label>
+						<select name="plainte">
+							<option>Racisme</option>
+							<option>Sexisme</option>
+							<option>Violence</option>
+							<option>Antisémitisme</option>
+							<option>Transphobie</option>
+							<option>Homophobie</option>
+							<option>Incitation a la haine</option>
+							<option>Blague pas drole</option>
+							<option>Plagia</option>
+							<option>Incitation a la haine</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="message">Entrez votre message</label>
+						<textarea cols="28" rows="10" name="message"></textarea>
+					</div>
+					
 				</div>
-			</div>
-			
+			</form>
+		
 		</main>
-
-
-
 
 		<footer>
 			<div>

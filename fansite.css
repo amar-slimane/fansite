@@ -6,7 +6,6 @@ body
 	margin:0px;
 }
 
-
 /*========================HEADER=======================*/
 header
 {
@@ -77,11 +76,6 @@ main
 {
 	font-family: "chalk";
 	src:url("chalk.ttf");
-}
-
-.garissonMenu
-{
-	
 }
 
 #garisson
@@ -212,6 +206,43 @@ main
 	bottom:-830px; left:200px;
 	
 	height:450px;
+}
+/*=========================FORM=======================*/
+form
+{
+	width:620px;
+	height:430px;
+	
+	margin:auto;
+	margin-top:200px;
+	
+	background-image:url("images/cardboardCover.png")
+}
+
+#formWrapper
+{
+	display:flex;
+	flex-direction:column;
+	
+	margin:auto;
+	
+	position:relative;
+	top:100px;
+}
+
+form div 
+{
+	display:flex;
+	justify-content:space-between;
+	
+	width:400px;
+	margin:10px;
+}
+
+form input
+{
+	width:214px;
+	height:25px;
 }
 
 /*========================FOOTER=======================*/
