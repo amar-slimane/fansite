@@ -1,11 +1,12 @@
-body {
-    background-image: url('https://images.alphacoders.com/674/674756.jpg');
-    background-size : 100%;
-    background-repeat: no-repeat;
-    padding:0px;
-    margin:0px;
-    /*========================HEADER=======================*/
+body
+{
+	background-image:url("https://images.alphacoders.com/674/674756.jpg");
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin:0px;
 }
+
+/*========================HEADER=======================*/
 header
 {
 	display:flex;
@@ -13,6 +14,7 @@ header
 	background-image:url("images/cardboardHeader.png");
 	height:75px;
 }
+
 .rotateImg
 {
 	display:flex;
@@ -54,11 +56,19 @@ header
 
 @keyframes swing
 {
-	0% {transform:rotate(-20deg);}
-	50% {transform:rotate(20deg);}
-	100% {transform:rotate(-20deg);}
+	0% {transform:rotate(-10deg);}
+	50% {transform:rotate(10deg);}
+	100% {transform:rotate(-10deg);}
+}
+
+
+/*========================MAIN========================*/
+
+main
+{
 	
 }
+
 
 /*==========================ACCUEIL========================*/
 
@@ -66,11 +76,6 @@ header
 {
 	font-family: "chalk";
 	src:url("chalk.ttf");
-}
-
-.garissonMenu
-{
-	
 }
 
 #garisson
@@ -109,55 +114,59 @@ header
 	text-align:center;
 }
 
-/* ------------ --------------------------NEWS--------------------------------------------*/
+/* --------------------------------------NEWS--------------------------------------------*/
 
-.nh1 {
+.newsTitle {
     color:brown;
+	width:150px;
+	margin:auto;
+	margin-bottom:200px;
 }
 
-.new1 {
-    background-image:url("images/cardboardHorizontal.png");
-    width: 500px;
-    height: 400px;
-    overflow: scroll;
-    overflow-x: hidden;
-    box-shadow: 10px 10px 42px -17px rgba(0,0,0,0.75);
-    align-content: center;
-    align-items: center;
-    margin: 20px;
-    font-family: "chalk";
-    src:url("chalk.ttf");
-    text-align: center;
-    background: background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-    
-}
-.newmain1 {
+.newsmain {
     display:flex;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
-    width: 60%;
+    width:1500px;
     flex-wrap: wrap;
 }
 
-.button {
-    text-align:center;
-    border-radius: 4px;
-    padding:5px;
-    background-image:url("images/cardboardHorizontal.png");
-    background-size:cover;
+.news {
+    background-image:url("images/cardboardCover.png");
+    width: 630px;
+    height: 420px;
+    margin: 20px;
+    font-family: "chalk";
+    text-align: center;    
 }
 
-img {
-    max-width:100%;
+.newsContent
+{
+	height:330px;
+	width:500px;
+	
+    overflow: scroll;
+    overflow-x: hidden;
+	
+	position:relative;
+	top:40px;
+	
+	margin:auto;
+	
+	border-radius:5px;
+}
+
+.newsContent h1
+{
+	background-image: linear-gradient(to top, transparent, #c49561);
+}
+
+
+.news img {
+    width:450px;
     max-height:100%;
 }
 
-.space {
-    height:100px;
-}
-
-.pnew {
+.pnews {
     position: relative;
     bottom: 0;
     left: 0;
@@ -165,102 +174,16 @@ img {
     text-align: center;
     margin: 0;
     padding: 30px 0;
-    background-image: linear-gradient(to bottom, transparent, black);
-  }
+    background-image: linear-gradient(to bottom, transparent, #c49561);
 }
 
-footer
-{
-	background-image:url("images/cardboardFooter.png");
-	height:140px;
-}
-
-.nhm {
-    font-size: 60px;
+.button {
     text-align:center;
-    color:brown;
-}
-/* --------------------------------------Event--------------------------*/
-
-.etable {
-    display:flex;
-    flex-direction: column;
-    border-collapse:collapse;
-    align-items: center;
-    align-content:center;
-    float:left;
-    background-image:url("images/cardboardHorizontal.png");
-    margin-left:5px;
-
+    border-radius: 4px;
+    padding:5px;
+    background-color:orange;
 }
 
-.ethead {
-    padding:10px;
-    background-color:white;
-    border: 3px solid black;
-    background-color:brown;
-    
-}
-
-.jj {
-}
-
-.j {
-    padding:10px;
-    color:black;
-    font-family: "chalk";
-    src:url("chalk.ttf");
-    background-image:url("images/cardboardHorizontal.png");
-    background-size:cover;
-}
-
-.j:hover {
-    transform: scale(1.5);
-
-}
-.js {
-    color:grey;
-    font-family: "chalk";
-	src:url("chalk.ttf");
-}
-
-.etbody {
-    border: 3px solid black;
-    background-color: white;
-}
-
-.eventmain {
-    display: flex;
-    flex-direction: column;
-    width:60%;
-
-}
-
-.devent {
-    display:flex;
-    flex-direction: row;
-    background-image:url("images/cardboardHorizontal.png");
-    background-size:cover;
-    border: 1px solid grey;
-    align-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 200px;
-    margin-left: 20px;
-    margin-bottom:20px;
-    font-family: "chalk";
-    src:url("chalk.ttf");
-    color:white;
-}
-
-.h2ev {
-    margin-right:40px;
-}
-
-.eimg {
-    width:400px;
-    height:400px;
-}
 
 /*======================IMAGES/VIDEO======================*/
 
@@ -276,7 +199,6 @@ footer
 }
 
 .doubleHorizontal video
-
 {
 	position:relative;
 	top:60px; left:60px;
@@ -356,6 +278,152 @@ footer
 	
 	height:450px;
 }
+
+/* --------------------------------------Event--------------------------*/
+
+.etable {
+    display:flex;
+    flex-direction: column;
+	
+    float:left;
+    margin-left:5px;
+
+}
+
+.ethead {
+    padding:10px;
+    background-color:white;
+    border: 3px solid black;
+    background-color:brown;
+}
+
+.j {
+    padding:10px;
+    color:black;
+    font-family: "chalk";
+    background-image:url("images/cardboardHorizontal.png");
+    background-size:cover;
+	
+	cursor:pointer;
+}
+
+.j:hover {
+    transform: scale(1.5);
+
+}
+
+.js {
+    color:grey;
+    font-family: "chalk";
+	src:url("chalk.ttf");
+	cursor:pointer;
+}
+
+.etbody {
+    border: 3px solid black;
+    background-color: white;
+}
+
+.eventmain {
+    display: flex;
+    flex-direction: column;
+    width:60%;
+
+}
+
+.devent {
+    display:flex;
+    flex-direction: row;
+    background-image:url("images/cardboardHorizontal.png");
+    background-size:cover;
+    align-content: center;
+    align-items: center;
+    height: 200px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    font-family: "chalk";
+    src:url("chalk.ttf");
+    color:white;
+}
+
+.h2ev {
+    margin-right:40px;
+}
+
+.eimg {
+	height:180px;
+	
+	margin-left:40px;
+	margin-top:10px;
+	
+	border-radius:10px;
+}
+
+
+/*=========================FORM=======================*/
+form
+{
+	width:620px;
+	height:430px;
+	
+	margin:auto;
+	margin-top:200px;
+	
+	background-image:url("images/cardboardCover.png")
+}
+
+#formWrapper
+{
+	display:flex;
+	flex-direction:column;
+	
+	margin:auto;
+	
+	position:relative;
+	top:100px;
+}
+
+form div 
+{
+	display:flex;
+	justify-content:space-between;
+	
+	width:400px;
+	margin:10px;
+}
+
+form input
+{
+	width:214px;
+	height:25px;
+}
+/*========================Réseaux Sociaux=======================*/
+
+.socialarticle {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+.socialdiv img {
+	width:300px;
+	height:auto;
+}
+
+.socialdiv {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	padding: 50px;
+	background-image: url("images/cardboardCover.png");
+}
+
+.socialdiv h2 {
+	color:brown;
+}
+
+
 /*========================FOOTER=======================*/
 footer
 {
