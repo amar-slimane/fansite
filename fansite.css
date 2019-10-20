@@ -364,10 +364,11 @@ main
 form
 {
 	width:620px;
-	height:430px;
+	height:420px;
 	
 	margin:auto;
-	margin-top:200px;
+	margin-top:180px;
+	margin-bottom:200px;
 	
 	background-image:url("images/cardboardCover.png")
 }
@@ -380,7 +381,7 @@ form
 	margin:auto;
 	
 	position:relative;
-	top:100px;
+	top:60px;
 }
 
 form div 
@@ -397,6 +398,14 @@ form input
 	width:214px;
 	height:25px;
 }
+
+form img
+{
+	margin-left:150px;
+	margin-top:80px;
+}
+
+
 
 /*========================FOOTER=======================*/
 footer
