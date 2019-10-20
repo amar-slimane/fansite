@@ -11,8 +11,29 @@ header
 {
 	display:flex;
 	flex-direction:row;
+	
+	justify-content:space-between;
+	
 	background-image:url("images/cardboardHeader.png");
 	height:75px;
+}
+
+header nav
+{
+	display:flex;
+	flex-direction:row;
+}
+
+#social
+{
+	width:200px;
+	margin-right:10px;
+}
+
+#social img
+{
+	width:50px;
+	height:50px;
 }
 
 .rotateImg
@@ -153,11 +174,19 @@ main
 	margin:auto;
 	
 	border-radius:5px;
+	
 }
 
-.newsContent h1
+
+.newsContent::-webkit-scrollbar
 {
-	background-image: linear-gradient(to top, transparent, #c49561);
+	width:10px;
+	border-radius:5px;
+}
+
+.newsContent::-webkit-scrollbar-thumb
+{
+	background:#a57d4f;
 }
 
 
@@ -174,7 +203,6 @@ main
     text-align: center;
     margin: 0;
     padding: 30px 0;
-    background-image: linear-gradient(to bottom, transparent, #c49561);
 }
 
 .button {
@@ -361,6 +389,13 @@ main
 
 
 /*=========================FORM=======================*/
+#contactPage
+{
+	background-image:url("images/contact.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+}
+
 form
 {
 	width:620px;
@@ -405,6 +440,64 @@ form img
 	margin-top:80px;
 }
 
+/*========================Réseaux Sociaux=======================*/
+
+.socialarticle {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+	
+}
+
+.socialarticle img {
+	width:500px;
+	height:auto;
+}
+
+.socialdiv
+{
+	display: flex;
+	flex-direction: column;
+
+	width:620px;
+	height:417px;
+	
+	margin: 50px;
+	
+	background-image: url("images/cardboardCover.png");
+}
+
+.socialdiv > *
+{
+	position:relative;
+	left:40px; top:20px;
+}
+
+.socialdiv h2, .socialdiv a
+{
+	left:80px;
+}
+
+.socialdiv a
+{
+	width:70px;
+	text-align:center;
+    border-radius: 4px;
+    padding:5px;
+    background-color:#ce9f5c;
+	color:white;
+	text-decoration:none;
+}
+
+.socialdiv a:hover
+{
+	background-color:#8e6e40;
+}
+
+.socialdiv h2 {
+	color:brown;
+}
 
 
 /*========================FOOTER=======================*/
